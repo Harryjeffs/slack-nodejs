@@ -108,7 +108,7 @@ function blockJson(data) {
 
 exports.handler = function(req, res) {
     // An access token (from your Slack app or custom integration - xoxp, xoxb)
-    const token = "xoxb-14628126167-1034093640705-n7Zwcv9I8pJY4qyhEepWxT9U"; //process.env.SLACK_TOKEN;
+    const token = process.env.SLACK_TOKEN;
 
     const web = new WebClient(token);
 
